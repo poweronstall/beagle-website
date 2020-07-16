@@ -26,20 +26,13 @@
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
     <style>
-      .bd-placeholder-img {
-        background-image: url(brooke-cagle-LCcFI_26diA-unsplash.svg);
-        background-repeat: no-repeat;
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
       .button-color {
         border-color: #44C693;
         background-color: #44C693;
+      }
+
+      .view {
+        height: 100%;
       }
 
       .beagle-icon {
@@ -48,10 +41,10 @@
 
       .bd-img {
         background-image: url(brooke-cagle-LCcFI_26diA-unsplash.svg);
+        background-attachment: fixed;
+        background-position: center;
         background-repeat: no-repeat;
-        max-width:auto;
-        max-height:auto;
-        width: 100%;
+        background-size: cover;
       }
 
       .money-on-fire-img {
@@ -98,29 +91,36 @@
 
 <main role="main">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-img img-responsive" alt="Responsive image" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-        </svg>
-        <div class="container">
-          <div class="carousel-caption text-left">
-            <h1 class="font-weight-bold">Find your orphaned 401(k)s</h1>
-            <p>Over $500 billion dollars in 401(k) accounts have been lost or forgotten in the US. Let Beagle find all of yours for FREE.</p>
-            <p><a class="btn btn-lg btn-primary button-color" href="#" role="button" >GET STARTED</a></p>
-          </div>
+<div class="view" style="background-image: url('./brooke-cagle-LCcFI_26diA-unsplash.svg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-gradient align-items-center">
+    <!-- Content -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-6 text-white text-center text-md-left mt-xl-5 mb-5 wow" data-wow-delay="0.3s">
+          <h1 class="h1-responsive font-weight-bold mt-sm-5">Find your orphaned 401(k)s </h1>
+          <hr class="hr-light">
+          <h6 class="mb-4">Over $500 billion dollars in 401(k) accounts have been lost or forgotten in the US.
+          Let Beagle find all of yours for FREE.</h6>
+          <a class="btn btn-lg btn-primary button-color">GET STARTED</a>
         </div>
       </div>
+      <!--Grid row-->
     </div>
+    <!-- Content -->
   </div>
+  <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+
+
 
 <section class="text-center">
   <div class="container">
-    <h5>HOW BEAGLE WORKS</h5>
-    <h2 class="font-weight-bold">It's your money, Don't lose it.</h2>
+    <p class="mt-sm-5 mb-sm-0 text-primary">HOW BEAGLE WORKS</p>
+    <h2 class="mt-sm-0 font-weight-bold">It's your money, Don't lose it.</h2>
   </div>
 </section>
 
@@ -151,6 +151,9 @@
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
+    <!-- <div class="mt-2 col-md-12">
+        This will have a two-point top margin!
+    </div> -->
     <p>
       <div class="text-center">
         <button type="button" class="btn btn-lg btn-primary button-color">GET STARTED</button>
@@ -162,7 +165,7 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h5 class="text-muted">IT’S NOT CHUMP CHANGE</h5>
+        <h5 class="text-primary">IT’S NOT CHUMP CHANGE</h5>
         <h2 class="font-weight-bold">Over $500 billion dollars lost </h2>
         <p class="lead">With the average person changing jobs every 3 years, over $500 billion dollars of hard earned money have been lost in the shuffle. And with the average 401(k) account worth $12,745, a single lost account can really effect your retirement.</p>
       </div>
@@ -174,7 +177,7 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h5 class="text-muted">WE'RE ON A MISSION</h5>
+        <h5 class="text-primary">WE'RE ON A MISSION</h5>
         <h2 class="font-weight-bold">No more lost 401(k)s</h2>
         <p class="lead">There are so many lost 401(k)s because traditional financial institutions don’t want to make it easy to take your money somewhere else (somewhere with lower fees). That’s why we started Beagle, to make it easy to find YOUR money.</p>
       </div>
@@ -186,7 +189,7 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h5 class="text-muted">COMPARE AND SAVE MORE</h5>
+        <h5 class="text-primary">COMPARE AND SAVE MORE</h5>
         <h2 class="font-weight-bold">Say goodbye to high fees</h2>
         <p class="lead">The average 401(k) fee is a wooping 1%. That could cost you over $136,957 by the time you retire. Beagle will show you what fees you’re currently paying on each account and if there is a lower fee option for your money.</p>
       </div>
@@ -196,18 +199,25 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <p>
+      <div class="text-center">
+        <h2 class="mt-sm-0 font-weight-bold">Let's get started</h2>
+        <button type="button" class="btn btn-lg btn-primary button-color">FIND YOUR 401(K)S FOR FREE</button>
+      </div>
+    </p>
 
     <!-- /END THE FEATURETTES -->
-
   </div><!-- /.container -->
-
-
+  <hr/>
 
   <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <footer class="mt-sm-0 container">
+    <img src="./beagle_icon_2.png" class="img-fluid beagle-icon">
+    <strong>Beagle</strong>
+    <div class="container">
+      <p class="float-right">Comments or Concerns? Email us at <a href="#">info@meetbeagle.com</a></p>
+      <p class="ml-sm-5">Copyright &copy; 2020 | All rights reserved &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
   </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
